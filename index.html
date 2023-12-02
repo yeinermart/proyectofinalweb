@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Estudiantes</title>
+
+</head>
+<body>
+    <h1>Escuela de desarrolladores</h1>
+    <h3>Puedes probar la página ingresando id como 1,2,3,4,5,6</h3>
+    <label for="idInput">ID del Estudiante:</label>
+    <input type="text" id="idInput">
+    
+    <button id="searchButton">Consultar</button>
+
+    <div id="resultado" style="display: none;">
+        <h2>Datos del Estudiante</h2>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre">
+
+        <label for="edad">Edad:</label>
+        <input type="text" id="edad">
+
+        <label for="grado">Grado:</label>
+        <input type="text" id="grado">
+
+        <label for="jornada">Jornada:</label>
+        <input type="text" id="jornada">
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion">
+
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono">
+
+        <label for="correo">Correo:</label>
+        <input type="text" id="correo">
+    </div>
+
+    <button id="updateButton">Actualizar</button>
+    <button id="deleteButton">Eliminar</button>
+    <button id="addButton">Agregar Estudiante</button>
+    <div id="error" style="display: none; color: red;"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
